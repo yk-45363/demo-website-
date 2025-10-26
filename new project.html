@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar | Mk Global Ventures</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-[url('photo.jpg')] bg-cover bg-no-repeat min-h-screen text-white flex flex-col">
+
+  <!-- Navbar -->
+  <header class="bg-[#ffffff30] backdrop-blur-md fixed w-full top-0 z-50">
+    <nav class="flex justify-between items-center px-8 h-16">
+      <a href="#" class="text-2xl font-bold border-2 px-2 py-1 hover:text-blue-400 hover:border-red-500 duration-[2s]">
+        Mk Global Ventures
+      </a>
+      <ul class="hidden md:flex gap-8 text-lg font-semibold items-center">
+        <li class="hover:text-orange-400 cursor-pointer">Home</li>
+        <li class="hover:text-orange-400 cursor-pointer">About</li>
+        <li class="hover:text-orange-400 cursor-pointer">Contact</li>
+        <li class="hover:text-orange-400 cursor-pointer">News</li>
+        <li class="hover:text-orange-400 cursor-pointer">Items</li>
+        <button class="hover:text-orange-400">Log in</button>
+        <button class="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">Sign up</button>
+      </ul>
+      <div id="toggleBtn" class="cursor-pointer md:hidden">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+    </nav>
+
+    <div id="menu"
+      class="hidden flex-col items-center gap-4 py-6 text-lg font-semibold bg-[#ffffff30] backdrop-blur-md md:hidden transition-all duration-300">
+      <ul class="flex flex-col gap-4 items-center">
+        <li class="hover:text-orange-400 cursor-pointer">Home</li>
+        <li class="hover:text-orange-400 cursor-pointer">About</li>
+        <li class="hover:text-orange-400 cursor-pointer">Contact</li>
+        <li class="hover:text-orange-400 cursor-pointer">News</li>
+        <li class="hover:text-orange-400 cursor-pointer">Items</li>
+      </ul>
+      <div class="flex flex-col gap-3 items-center mt-4">
+        <button class="hover:text-orange-400">Log in</button>
+        <button class="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 pt-24 px-10">
+    <h1 class="text-[60px] py-10 font-semibold">Pakistan Beautiful Places</h1>
+
+    <div class="cards flex flex-wrap gap-10 justify-evenly">
+      <div
+        class=" cursor-pointer border border-2 w-[30%] p-4 bg-[#ffffff20] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+        <img src="/Places-to-visit-in-Peshawar-04-1.jpg" alt=""
+          class="w-full rounded-lg transition-transform duration-500 hover:scale-110">
+        <h1 class="text-2xl font-semibold mt-2">Peshawar the city of flowers</h1>
+        <hr class="my-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+
+      <div
+        class=" cursor-pointer border border-2 w-[30%] p-4 bg-[#ffffff20] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+        <img src="/punjab.jpg" alt="" class="w-full rounded-lg transition-transform duration-500 hover:scale-110">
+        <h1 class="text-2xl font-semibold mt-2">Punjab</h1>
+        <hr class="my-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+
+      <div
+        class=" cursor-pointer border border-2 w-[30%] p-4 bg-[#ffffff20] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+        <img src="/waziristan.jpg" alt="" class="w-full rounded-lg transition-transform duration-500 hover:scale-110">
+        <h1 class="text-2xl font-semibold mt-2">Waziristan</h1>
+        <hr class="my-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#08080870] py-10 mt-10 ">
+    <div class="flex justify-around">
+      <div>
+        <ul>
+          <li class="cursor-pointer">Contact Us</li>
+          <li class="cursor-pointer">New Items</li>
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer">Location</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="cursor-pointer">Contact Us</li>
+          <li class="cursor-pointer">New Items</li>
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer">Location</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="cursor-pointer">Contact Us</li>
+          <li class="cursor-pointer">New Items</li>
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer">Location</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-gray-300 text-sm py-4 border-t border-gray-600 mt-8">
+      &copy; 2025 <span class="text-orange-400 font-semibold cursor-pointer">Mk Global Ventures</span> — All Rights Reserved.
+    </div>
+
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const menu = document.getElementById("menu");
+    toggleBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>
